@@ -2,6 +2,7 @@ name: Check for unused imports using Pylint
 on:
   pull_request:
     branches:
+      - main
       - current
       - sagitta
   workflow_dispatch:

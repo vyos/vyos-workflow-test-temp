@@ -10,3 +10,6 @@ crux:
 sagitta:
   - any:
     - base-branch: 'sagitta'
+main:
+  - any:
+    - base-branch: 'main'
