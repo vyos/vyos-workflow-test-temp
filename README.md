@@ -1,4 +1,4 @@
-# vyos-workflow-test-temp: Validates the common github workflows
+# vyos-workflow-test-temp: Validates the common reusable github workflows
 
 ## Package layout for validation and tests.
 
