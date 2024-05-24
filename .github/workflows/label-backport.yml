@@ -1,6 +1,8 @@
 name: Mergifyio backport
 
-on: [issue_comment]
+# on: [issue_comment]
+on: 
+  workflow_dispatch:
 
 permissions:
   pull-requests: write
