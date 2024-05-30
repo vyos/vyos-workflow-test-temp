@@ -10,8 +10,15 @@ on:
 
 jobs:
   trigger-sync:
-    uses: vyos/.github/.github/workflows/trigger-repo-sync.yml@feature/T6349-reusable-workflows
-    with:
+    runs-on: ubuntu-latest
+    env:
       REMOTE_REPO: ${{ secrets.REMOTE_REPO }}
       REMOTE_OWNER: ${{ secrets.REMOTE_OWNER }}
       PAT: ${{ secrets.PAT }}
+    steps:
+      - name: Trigger reusable workflow
+        uses: vyos/.github/.github/workflows/trigger-repo-sync.yml@feature/T6349-reusable-workflows
+        with:
+          REMOTE_REPO: ${{ env.REMOTE_REPO }}
+          REMOTE_OWNER: ${{ env.REMOTE_OWNER }}
+          PAT: ${{ env.PAT }}
