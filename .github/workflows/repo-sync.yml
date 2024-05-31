@@ -5,7 +5,7 @@ on:
       types:
         - closed
       branches:
-        - current
+        - T6415-secret-check
     workflow_dispatch:
 
 jobs:
