@@ -1,7 +1,7 @@
 # Validates the common reusable github action workflows
 
 
-## Package layout for validation and tests.
+## Package layout for validation.
 
 ```
 data                   # Jinja2 templates
