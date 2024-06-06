@@ -2,7 +2,6 @@
 
 
 ## Workflow validations
-
 ```
 data                   # Jinja2 templates
 src
