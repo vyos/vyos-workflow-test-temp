@@ -1,6 +1,7 @@
-# vyos-workflow-test-temp: Validates the common github workflows
+# Validates the common reusable github action workflows
 
-## Package layout for validation
+
+## Workflow validations
 
 ```
 data                   # Jinja2 templates

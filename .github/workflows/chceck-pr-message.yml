@@ -4,10 +4,10 @@ name: Check pull request message format
 on:
   pull_request:
     branches:
-      - main
       - current
       - crux
       - equuleus
+    types: [opened, synchronize, edited]
 
 permissions:
   pull-requests: write
@@ -15,5 +15,5 @@ permissions:
 
 jobs:
   check-pr-title:
-    uses: vyos/.github/.github/workflows/check-pr-message.yml@feature/T6349-reusable-workflows
+    uses: vyos/.github/.github/workflows/check-pr-message.yml@feature/T6449-add-pr-title-issue-comment
     secrets: inherit
