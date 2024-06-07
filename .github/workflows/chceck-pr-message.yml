@@ -15,5 +15,5 @@ permissions:
 
 jobs:
   check-pr-title:
-    uses: vyos/.github/.github/workflows/check-pr-message.yml@feature/T6449-add-pr-title-issue-comment
+    uses: vyos/.github/.github/workflows/check-pr-message.yml@feature/T6349-reusable-workflows
     secrets: inherit
