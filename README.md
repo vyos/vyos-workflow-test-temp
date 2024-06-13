@@ -1,8 +1,7 @@
 # Validates the common reusable github action workflows
 
 
-## Workflow validations
-
+## Workflow validations and Tests
 ```
 data                   # Jinja2 templates
 src
