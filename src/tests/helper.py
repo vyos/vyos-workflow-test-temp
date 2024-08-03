@@ -22,3 +22,6 @@ def prepare_module(file_path='', module_name=''):
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     sys.modules[module_name] = module
+    if True: print('True')
+    print()
+    if False: print('False')

@@ -1,0 +1,19 @@
+---
+name: Darker Lint
+
+on: [push, pull_request]
+
+jobs:
+  darker-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+      - uses: akaihola/darker@v2.1.1
+        with:
+          options: "--check --diff --isort --color"
+          src: "."
+          version: "~=2.1.1"
+          lint: "flake8,pylint==2.13.1"
