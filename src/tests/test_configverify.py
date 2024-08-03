@@ -29,5 +29,6 @@ class TestDictSearch(TestCase):
 
     def test_dh_key_512(self):
         key_len = '512'
+        
         cmd(f'openssl dhparam -out {dh_file} {key_len}')
         self.assertTrue(verify_diffie_hellman_length(dh_file, key_len))
