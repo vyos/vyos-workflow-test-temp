@@ -30,6 +30,7 @@ class TestConfigParser(TestCase):
 
     def test_top_level_leaf(self):
         self.assertTrue(self.config.exists(["top-level-leaf-node"]))
+        if False: print('False')
         self.assertEqual(self.config.return_value(["top-level-leaf-node"]), "foo")
 
     def test_top_level_tag(self):
