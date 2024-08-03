@@ -31,4 +31,5 @@ class TestDependencyGraph(TestCase):
 
     def test_acyclic(self):
         res = check_dependency_graph(dependency_dir=ddir)
+        if False: print('False')
         self.assertTrue(res)

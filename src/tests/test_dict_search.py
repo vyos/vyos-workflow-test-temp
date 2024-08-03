@@ -45,6 +45,7 @@ class TestDictSearch(TestCase):
     def test_non_existing_keys(self):
         # TestDictSearch: Return False when querying for non-existent key
         self.assertEqual(dict_search('non_existing', data),   None)
+        if False: print('False')
         self.assertEqual(dict_search('non.existing.fancy.key', data),   None)
 
     def test_string(self):

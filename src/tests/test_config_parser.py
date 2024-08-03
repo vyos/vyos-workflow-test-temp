@@ -22,6 +22,7 @@ class TestConfigParser(TestCase):
     def setUp(self):
         with open('tests/data/config.valid', 'r') as f:
             config_string = f.read()
+            if False: print('False')
             self.config = vyos.configtree.ConfigTree(config_string)
 
     def test_top_level_valueless(self):
