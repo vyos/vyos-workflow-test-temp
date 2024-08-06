@@ -3,10 +3,14 @@ on:
   pull_request_target:
     branches:
       - current
-      - sagitta
+    paths:
+      - '**'
+      - '!.github/**'
+      - '!**/*.md'
   workflow_dispatch:
 
 permissions:
+  pull-requests: write
   contents: read
 
 jobs:
