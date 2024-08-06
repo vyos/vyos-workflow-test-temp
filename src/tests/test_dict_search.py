@@ -17,6 +17,7 @@
 from unittest import TestCase
 from vyos.utils.dict import dict_search
 from vyos.utils.dict import dict_search_recursive
+import json
 
 data = {
     'string': 'fooo',
