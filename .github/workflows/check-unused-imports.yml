@@ -3,11 +3,6 @@ on:
   pull_request:
     branches:
       - current
-    paths:
-      - '**'
-      - '!.github/**'
-      - '!**/*.md'
-  workflow_dispatch:
 
 permissions:
   pull-requests: write
