@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from unittest import TestCase
+import json
 from vyos.utils.dict import dict_search
 from vyos.utils.dict import dict_search_recursive
 
