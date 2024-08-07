@@ -16,6 +16,7 @@
 
 from unittest import TestCase
 from vyos.utils.system import find_device_file
+import json
 
 class TestDeviceFile(TestCase):
     """ used to find USB devices on target """
