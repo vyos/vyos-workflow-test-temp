@@ -18,6 +18,7 @@ import os
 import tempfile
 import unittest
 import importlib
+import requests
 
 from vyos import ConfigError
 
