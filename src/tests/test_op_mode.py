@@ -17,7 +17,6 @@
 from unittest import TestCase
 
 import vyos.opmode
-import requests
 
 class TestVyOSOpMode(TestCase):
     def test_field_name_normalization(self):
